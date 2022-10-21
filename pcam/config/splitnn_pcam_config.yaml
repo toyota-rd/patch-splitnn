@@ -1,0 +1,20 @@
+data_dir: /home/ubuntu/workspace/data
+
+backend:
+gpus: 1
+logger: "tensorb"
+
+dataset: PCAM
+
+lr: 0.01
+batch_size: 128
+num_worker: 4
+epoch: 60
+
+base_model: "resnet18"
+patch_size: 48
+patch_stride: 24
+num_uppmodels: 1
+adapt_net: False
+upp_loss_ratio: 0.3
+drop_rate: 0.0

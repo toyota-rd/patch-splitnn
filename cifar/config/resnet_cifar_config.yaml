@@ -1,0 +1,14 @@
+data_dir: data  
+
+backend:
+gpus: 1
+logger: "tensorb"
+
+dataset: "CIFAR10"
+
+lr: 0.05
+batch_size: 256
+num_worker: 4
+epoch: 200
+
+model_name: "resnet18"  # or resnet34 or preact_resnet

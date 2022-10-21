@@ -1,0 +1,14 @@
+data_dir: /home/ubuntu/workspace/data
+
+backend:
+gpus: 1
+logger: "tensorb"
+
+dataset: "PCAM"
+
+lr: 0.01
+batch_size: 64
+num_worker: 4
+epoch: 60
+
+model_name: "resnet18"  # or resnet34

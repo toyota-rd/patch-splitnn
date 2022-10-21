@@ -1,0 +1,15 @@
+h5py==3.7.0
+hydra-core==1.2.0
+lightning-bolts==0.4.0
+omegaconf==2.2.2
+Pillow
+pytorch-lightning==1.6.1
+thop==0.1.1.post2207130030
+torch==1.12.0
+torch-model-archiver==0.5.3
+torchinfo==1.5.4
+torchserve==0.6.0
+torchmetrics==0.9.3
+torchvision==0.13.0
+tqdm==4.63.2
+wandb==0.12.10
