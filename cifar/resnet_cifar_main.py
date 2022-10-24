@@ -116,7 +116,7 @@ def main(args: DictConfig):
     assert torch.cuda.is_available, 'Please use a machine has GPUs.'
     gpus = 1 if args.backend == 'horovod' else args.gpus
 
-    assert args.dataset in ['CIFAR10', 'CIFAR100'], "Set appropriate model_name."
+    assert args.dataset in ['CIFAR10', 'CIFAR100'], "Set appropriate dataset."
     if args.dataset == "CIFAR10":
         num_classes = 10
         normalization = cifar10_normalization()

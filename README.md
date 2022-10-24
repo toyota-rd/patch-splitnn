@@ -23,19 +23,7 @@ For details, see `requirements.txt`.
 - [PCAM (Patch Camelyon)](https://github.com/basveeling/pcam)
 
 ## Training
-### Parameters
-- `data_dir`: path to dataset directory.
-- `logger`: `tensorboard` or `wandb` can be used.
-- `dataset`: `CIFAR10`, `CIFAR100`, `PatchCIFAR10`, `PatchCIFAR100`, or `PCAM`.
-- `base_model`: `resnet18` or `resnet34`
-- `patch_size`: the size of patch images.
-- `patch_stride`: the stride size for splitting.
-- `num_uppmodels`: the number of upper models for Patch SplitNN.
-- `adapt_net`: if `True`, *Adaptation Net* is set. 
-- `upp_loss_ratio`: Coefficient value for loss function of upper loss.
-- `drop_rate`: the ratio of dropping patches.
-
-### CIFAR
+### On CIFAR
 - Move to `cifar` folder.
 ```sh
 $ cd cifar
@@ -56,8 +44,8 @@ $ python patch_splitnn_cifar_main.py adapt_net=False
 $ python patch_splitnn_cifar_main.py adapt_net=True
 ```
 
-### PCAM
-- Before training, dataset should be downloaded. Then set the path to `config.yaml`.
+### On PCAM
+- Before training, dataset should be downloaded. Then set the path to `YAML`.
 
 - Move to `pcam` folder.
 ```sh
@@ -79,6 +67,20 @@ $ python patch_splitnn_main.py adapt_net=False
 $ python patch_splitnn_main.py adapt_net=True
 ```
 
+### Parameters of YAML
+Configuration files are stored in each `config/`.
+- `data_dir`: path to dataset directory.
+- `logger`: `tensorboard` or `wandb` can be used.
+- `dataset`: `CIFAR10`, `CIFAR100`, `PatchCIFAR10`, `PatchCIFAR100`, or `PCAM`.
+- `base_model`: `resnet18` or `resnet34`
+- `patch_size`: the size of patch images.
+- `patch_stride`: the stride size for splitting.
+- `num_uppmodels`: the number of upper models for Patch SplitNN.
+- `adapt_net`: if `True`, *Adaptation Net* is set. 
+- `upp_loss_ratio`: Coefficient value for loss function of upper loss.
+- `drop_rate`: the ratio of dropping patches.
+
+
 ### Docker
 > [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker) is needed.
 
@@ -97,7 +99,7 @@ $ cd /opt/patch-splitnn
 ```
 
 
-### Citation
+## Citation
 ```bibtex
 @InProceedings{PatchSplitNN_2023_WACV,
     author = {Mitsuhiro Mabuchi and Tetsuya Ishikawa},
