@@ -5,7 +5,7 @@
 </div>
 
 **Patch-based Privacy Preserving Neural Network for Vision Tasks** <br/>
-This paper will be appeared on IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023.
+This paper is presented on IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023, and available in [WACV2023 open access](https://openaccess.thecvf.com/content/WACV2023/html/Mabuchi_Patch-Based_Privacy_Preserving_Neural_Network_for_Vision_Tasks_WACV_2023_paper.html).
 
 ## Requirements
 - `h5py`: 3.7.0
@@ -101,11 +101,12 @@ $ cd /opt/patch-splitnn
 
 ## Citation
 ```bibtex
-@InProceedings{PatchSplitNN_2023_WACV,
-    author = {Mitsuhiro Mabuchi and Tetsuya Ishikawa},
-    title = {Patch-based Privacy Preserving Neural Network for Vision Tasks},
-    booktitle = {To be appeared. Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-    month = {January},
-    year = {2023}
+@InProceedings{Mabuchi_2023_WACV,
+    author    = {Mabuchi, Mitsuhiro and Ishikawa, Tetsuya},
+    title     = {Patch-Based Privacy Preserving Neural Network for Vision Tasks},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2023},
+    pages     = {1550-1559}
 }
 ```
